@@ -1,4 +1,2 @@
-# Facade pattern
-Objective: implement facade pattern in Go.
-A facade was realized for shooting a great film.
-
+# Design pattern
+The repository is dedicated to the implementation of various design patterns in Go.
