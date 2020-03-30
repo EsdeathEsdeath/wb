@@ -1,0 +1,15 @@
+@startuml
+[Client]
+[FilmFacade]
+[Actor]
+[Producer]
+[Screenwriter]
+[Stuntman]
+
+Client --> FilmFacade
+FilmFacade --> Actor
+FilmFacade --> Producer
+FilmFacade --> Screenwriter
+FilmFacade --> Stuntman
+
+@enduml
