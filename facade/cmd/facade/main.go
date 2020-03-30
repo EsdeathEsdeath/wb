@@ -9,10 +9,10 @@ import (
 )
 
 func main() {
-	a := actors.NewActors()
-	p := producer.NewProducer()
-	s := screenwriter.NewScreenwriter()
-	st := stuntman.NewStuntman()
-	f := facade.FilmSquad(s, p, a, st)
-	f.MakeGreatFilm()
+	actors := actors.NewActors()
+	producer := producer.NewProducer()
+	screenwriter := screenwriter.NewScreenwriter()
+	stuntman := stuntman.NewStuntman()
+	filmSquad := facade.FilmSquad(screenwriter, producer, actors, stuntman)
+	filmSquad.MakeGreatFilm()
 }
