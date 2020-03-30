@@ -1,11 +1,11 @@
 package main
 
 import (
-	"facade/pkg/actors"
-	"facade/pkg/facade"
-	"facade/pkg/producer"
-	"facade/pkg/screenwriter"
-	"facade/pkg/stuntman"
+	"github.com/EsdeathEsdeath/wb_pr/facade/pkg/actors"
+	"github.com/EsdeathEsdeath/wb_pr/facade/pkg/facade"
+	"github.com/EsdeathEsdeath/wb_pr/facade/pkg/producer"
+	"github.com/EsdeathEsdeath/wb_pr/facade/pkg/screenwriter"
+	"github.com/EsdeathEsdeath/wb_pr/facade/pkg/stuntman"
 )
 
 func main() {

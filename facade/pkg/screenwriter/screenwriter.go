@@ -1,3 +1,4 @@
+//Package screenwriter implement method to  write a script
 package screenwriter
 
 import "fmt"
@@ -13,7 +14,7 @@ type screenwriter struct {
 
 // The script is written
 func (s *screenwriter) WriteScript(name string) {
-	fmt.Println(name, "write a perfect script")
+	fmt.Println(name, "write a great script")
 }
 
 // Creating new screenwriter

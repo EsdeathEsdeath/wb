@@ -1,3 +1,4 @@
+//Package stuntman implement method to do some tricks in movie
 package stuntman
 
 import "fmt"

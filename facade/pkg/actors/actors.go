@@ -1,3 +1,4 @@
+//Package actors implement method to play a role in movie
 package actors
 
 import "fmt"
