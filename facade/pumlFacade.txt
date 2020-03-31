@@ -1,10 +1,12 @@
 @startuml
 [Client]
 [FilmFacade]
+package "Facade"{
 [Actor]
 [Producer]
 [Screenwriter]
 [Stuntman]
+}
 
 Client --> FilmFacade
 FilmFacade --> Actor
