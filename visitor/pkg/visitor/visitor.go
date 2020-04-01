@@ -1,4 +1,4 @@
-//Package visitor implement interface to work with visitor
+// Package visitor implement interface to work with visitor
 package visitor
 
 

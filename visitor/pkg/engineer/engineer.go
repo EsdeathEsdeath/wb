@@ -1,4 +1,4 @@
-//Package employee implement function to work with engineer
+// Package employee implement function to work with engineer
 package engineer
 
 type Engineer struct {

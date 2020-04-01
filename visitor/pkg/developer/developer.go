@@ -1,4 +1,4 @@
-//Package employee implement function to work with developer
+// Package employee implement function to work with developer
 package developer
 
 type Developer struct {
