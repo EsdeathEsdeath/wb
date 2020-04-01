@@ -4,3 +4,6 @@ The repository is dedicated to the implementation of various design patterns in 
 
 # Structural
 * [Facade](https://github.com/EsdeathEsdeath/wb_pr/tree/master/facade)
+
+# Behavioral
+* Visitor
