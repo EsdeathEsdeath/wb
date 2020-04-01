@@ -6,9 +6,3 @@ type Visitor interface {
 	VisitDeveloper(d Devrloper)
 	VisitEngineer(e Engineer)
 }
-
-
-
-
-
-
