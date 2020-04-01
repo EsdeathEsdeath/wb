@@ -1,4 +1,4 @@
-//Package facade implement method to create a movie
+// Package facade implement method to create a movie
 package facade
 
 import "fmt"
@@ -32,14 +32,14 @@ type film struct {
 	stuntman  filmStuntman
 }
 
-//Function to create your own actors cast
+// Function to create your own actors cast
 func (f *film) CreateCast(cast string) string{
 	res := f.actors.SetCast(cast)
 	fmt.Println(res)
 	return res
 }
 
-//Set group to create a great film
+// Set group to create a great film
 func (f *film) MakeGreatFilm(){
 	f.screenwriter.WriteScript("Billy Wilder")
 	f.producer.MakeMovie("Michael Mann")
