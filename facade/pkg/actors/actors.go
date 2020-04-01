@@ -1,4 +1,4 @@
-//Package actors implement method to play a role in movie
+// Package actors implement method to play a role in movie
 package actors
 
 // Play role
@@ -11,7 +11,7 @@ type actors struct {
 }
 
 // SetCast appends actors and returns cast of film
-//You can choose cast by yourself
+// You can choose cast by yourself
 func (a *actors) SetCast(cast string) string {
 	var iter int
 	var castList, buffer string
