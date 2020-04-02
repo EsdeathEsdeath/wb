@@ -1,4 +1,4 @@
-//Package screenwriter implement method to  write a script
+// Package screenwriter implement method to  write a script
 package screenwriter
 
 import "fmt"
