@@ -1,17 +1,24 @@
-// Package calculIncome implement function to calculate income for both visit
+// Package calculIncome implement function to calculate income for employees
 package calculIncome
 
-import (
-"fmt"
-)
-
-type CalculIncome struct {
-	BonusRate int
+type BonusIncome interface {
+	BonusForDev(income int) (res int)
+	BonusForEng(income int) (res int)
 }
 
-func (c CalculIncome) VisitDeveloper(d Developer) {
-	fmt.Println(d.Income + d.Income * c.BonusRate/10)
+type calculIncome struct {}
+
+func (c *calculIncome) BonusForDev(income int) (res int) {
+	res = income + income * income/150
+	return
 }
-func (c CalculIncome) VisitEngineer(e Enginner) {
-	fmt.Println(e.Income + e.Income * c.BonusRate/100)
+
+func (c *calculIncome) BonusForEng(income int) (res int) {
+	res = income + income * income/200
+	return
+}
+
+// New bonus income instance
+func NewInc() BonusIncome {
+	return &calculIncome{}
 }
