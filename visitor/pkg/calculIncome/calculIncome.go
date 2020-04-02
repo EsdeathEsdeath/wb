@@ -8,11 +8,13 @@ type BonusIncome interface {
 
 type calculIncome struct {}
 
+// Function for calculate income for developer
 func (c *calculIncome) BonusForDev(income int) (res int) {
 	res = income + income * income/150
 	return
 }
 
+// Function for calculate income for engineer
 func (c *calculIncome) BonusForEng(income int) (res int) {
 	res = income + income * income/200
 	return

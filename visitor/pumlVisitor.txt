@@ -1,0 +1,19 @@
+@startuml
+
+title Visitor - Component Diagram
+
+[Client]
+[Visitor]
+[employees]
+[calculIncome]
+[Developer]
+[Engineer]
+
+Client --> Visitor
+calculIncome --> Visitor
+
+Client --> employees
+Developer --> employees
+Engineer --> employees
+
+@enduml

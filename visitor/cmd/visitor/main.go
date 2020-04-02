@@ -1,16 +1,23 @@
 package main
 
 import (
-	"visitor/pkg/developer"
-	"visitor/pkg/engineer"
-	"visitor/pkg/visitor"
-	"visitor/pkg/employee"
+	"fmt"
+	"github.com/EsdeathEsdeath/wb_pr/tree/visitor_first/visitor/pkg/calculIncome"
+	"github.com/EsdeathEsdeath/wb_pr/tree/visitor_first/visitor/pkg/developer"
+	"github.com/EsdeathEsdeath/wb_pr/tree/visitor_first/visitor/pkg/engineer"
+	"github.com/EsdeathEsdeath/wb_pr/tree/visitor_first/visitor/pkg/visitor"
 )
 
 func main() {
-	backend := developer.Developer{Income: 1000}
-	admin := engineer.Engineer{Income: 2000}
-	backend.Accept(calculIncome.CalculIncome{BonusRate: 20})
-	admin.Accept(calculIncome.CalculIncome{BonusRate:10})
+	bonus := calculIncome.NewInc()
+	backend := developer.NewDev(bonus, 1000)
+	visit := visitor.NewVisitor(backend)
+	bonusForBack := visit.Accept()
+	fmt.Println("New income for developer: ",bonusForBack)
+
+	chief := engineer.NewEng(bonus, 2000)
+	visit = visitor.NewVisitor(chief)
+	bonusForChief := visit.Accept()
+	fmt.Println("New income for engineer: ",bonusForChief)
 
 }

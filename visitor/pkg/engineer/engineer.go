@@ -21,7 +21,7 @@ func (e *engineer) Accept() (res int){
 	return
 }
 
-// New dev instance
+// New engineer instance
 func NewEng(bonusIncome bonusIncome, income int) Engineer {
 	return &engineer{
 		bonusIncome:   bonusIncome,
