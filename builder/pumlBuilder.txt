@@ -1,0 +1,29 @@
+@startuml
+
+ package "Director" {
+ interface carBuilder
+ [director]
+ }
+
+ package "Builder" {
+ carBuilder -- [StartNewCar]
+ carBuilder -- [BuildCarBody]
+ carBuilder -- [ReturnCar]
+ }
+
+ package "sportCar" {
+ interface SportCar
+ [StartNewCar] -- SportCar
+ [BuildCarBody] -- SportCar
+ [ReturnCar] -- SportCar
+ interface carPart
+ [car]
+ }
+
+ package "Product" {
+ [car]
+ carPart -- [Append]
+ carPart -- [Return]
+ }
+
+ @enduml
