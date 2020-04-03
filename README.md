@@ -9,3 +9,6 @@ The code is divided into packages. Entry Point - cmd/main.go
 
 # Behavioral
 * Visitor
+
+# Creational
+* Builder
